@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --plainMain: white;
+    --dark: black;
+    --plainOther: rgb(178, 178, 197);
+}
+
+body {
+    border-color: var(--plainMain);
+    color: var(--dark);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+
+button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--plainMain);
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1.2rem 1rem;
+    font-size: 18px;
+    height: auto;
+    font-weight: 700;
+    width: 35rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.btns {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hideBtn {
+    background-color: var(--plainOther);
+}
+
+
+.contents {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   gap: 3.5rem;
+   padding: 1rem;
+}
+.content {
+    padding: 2rem;
+}
+
+.mycv {
+    background-color: var(--plainOther);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: .35rem;
+}
+
+
+.viewref {
+    font-style: italic;
+}
+
+.mypics div {
+    display: grid;
+    justify-content: right;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.pic {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: .2rem;
+    border-radius: 5px;
+    background-color: var(--plainOther);
+}
+
+img {
+    width: 12rem;
+    height: 12rem;
+    justify-self: center;
+}
